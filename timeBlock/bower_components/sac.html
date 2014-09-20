@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/JavaScript" src="../bower_components/jquery/dist/jquery.js"></script>
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+<script type="text/JavaScript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen"
+     href="http://tarruda.github.com/bootstrap-datetimepicker/assets/css/bootstrap-datetimepicker.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+      <ul class="nav nav-pills pull-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <h3 class="text-muted">TimeBlock</h3>
+  	</div>
+
+  	<div class="row">
+	  <div class="col-md-6", align="left">
+	  	<div>
+		    <label for="exampleInputUserName">Date</label>
+		    <div id="datetimepicker" class="input-append date">
+			    <input type="text" value="12-02-2012"></input>
+			    <span class="add-on"><i data-time-icon="icon-time" data-date-icon="icon-calendar"></i></span>
+			</div>
+			
+			<script type="text/javascript"
+			 src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.min.js">
+			</script>
+			<script type="text/javascript"
+			 src="http://tarruda.github.com/bootstrap-datetimepicker/assets/js/bootstrap-datetimepicker.pt-BR.js">
+			</script>
+			<script type="text/javascript">
+			  $('#datetimepicker').datetimepicker({
+			    format: 'dd/MM/yyyy',
+			    language: 'pt-BR'
+			  });
+			</script>
+		</div>
+
+		<div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+
+		<div class="row">
+			<div class="col-md-6">
+			    <label for="inputST">Start Time</label>
+			    <div class="Select" height="200px">
+				  <button id = "btnL" class="btn btn-default btn-sm btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				    <li id = "1200" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1200')">12:00 pm</a></li>
+				    <li id = "1215" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1215')">12:15 pm</a></li>
+				    <li id = "1230" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1230')">12:30 pm</a></li>
+				    <li id = "1245" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1245')">12:45 pm</a></li>
+				    <li id = "1300" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1300')">1:00 pm</a></li>
+				    <li id = "1315" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1315')">1:15 pm</a></li>
+				    <li id = "1330" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1330')">1:30 pm</a></li>
+				    <li id = "1345" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1345')">1:45 pm</a></li>
+				    <li id = "1400" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1400')">2:00 pm</a></li>
+				    <li id = "1415" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1415')">2:15 pm</a></li>
+				    <li id = "1430" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1430')">2:30 pm</a></li>
+				    <li id = "1445" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1445')">2:45 pm</a></li>
+				    <li id = "1500" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1500')">3:00 pm</a></li>
+				    <li id = "1515" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1515')">3:15 pm</a></li>
+				    <li id = "1530" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1530')">3:30 pm</a></li>
+				    <li id = "1545" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1545')">3:45 pm</a></li>
+				    <li id = "1600" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1600')">4:00 pm</a></li>
+				    <li id = "1615" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1615')">4:15 pm</a></li>
+				    <li id = "1630" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1630')">4:30 pm</a></li>
+				    <li id = "1645" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1645')">4:45 pm</a></li>
+				    <li id = "1700" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1700')">5:00 pm</a></li>
+				    <li id = "1715" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1715')">5:15 pm</a></li>
+				    <li id = "1730" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1730')">5:30 pm</a></li>
+				    <li id = "1745" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1745')">5:45 pm</a></li>
+				    <li id = "1800" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1800')">6:00 pm</a></li>
+				    <li id = "1815" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1815')">6:15 pm</a></li>
+				    <li id = "1830" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1830')">6:30 pm</a></li>
+				    <li id = "1845" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1845')">6:45 pm</a></li>
+				    <li id = "1900" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1900')">7:00 pm</a></li>
+				    <li id = "1915" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1915')">7:15 pm</a></li>
+				    <li id = "1930" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1930')">7:30 pm</a></li>
+				    <li id = "1945" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('1945')">7:45 pm</a></li>
+				    <li id = "2000" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2000')">8:00 pm</a></li>
+				    <li id = "2015" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2015')">8:15 pm</a></li>
+				    <li id = "2030" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2030')">8:30 pm</a></li>
+				    <li id = "2045" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2045')">8:45 pm</a></li>
+				    <li id = "2100" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2100')">9:00 pm</a></li>
+				    <li id = "2115" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2115')">9:15 pm</a></li>
+				    <li id = "2130" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2130')">9:30 pm</a></li>
+				    <li id = "2145" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2145')">9:45 pm</a></li>
+				    <li id = "2200" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2200')">10:00 pm</a></li>
+				    <li id = "2215" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2215')">10:15 pm</a></li>
+				    <li id = "2230" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2230')">10:30 pm</a></li>
+				    <li id = "2245" role="presentation"><a role="menuitem" tabindex="-1" onclick="record('2245')">10:45 pm</a></li>
+				    <script>
+				  	
+				  </script>
+				  </ul>
+				  
+				</div>
+			 </div>
+
+			 <div class="col-md-6">
+			    <label for="inputET">End Time</label>
+			    <div class="dropdown">
+				  <button id="btnR" class="btn btn-default btn-sm btn-block dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" width="50">
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+				     <li id = "1200/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1200/')">12:00 pm</a></li>
+				    <li id = "1215/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1215/')">12:15 pm</a></li>
+				    <li id = "1230/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1230/')">12:30 pm</a></li>
+				    <li id = "1245/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1245/')">12:45 pm</a></li>
+				    <li id = "1300/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1300/')">1:00 pm</a></li>
+				    <li id = "1315/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1315/')">1:15 pm</a></li>
+				    <li id = "1330/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1330/')">1:30 pm</a></li>
+				    <li id = "1345/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1345/')">1:45 pm</a></li>
+				    <li id = "1400/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1400/')">2:00 pm</a></li>
+				    <li id = "1415/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1415/')">2:15 pm</a></li>
+				    <li id = "1430/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1430/')">2:30 pm</a></li>
+				    <li id = "1445/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1445/')">2:45 pm</a></li>
+				    <li id = "1500/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1500/')">3:00 pm</a></li>
+				    <li id = "1515/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1515/')">3:15 pm</a></li>
+				    <li id = "1530/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1530/')">3:30 pm</a></li>
+				    <li id = "1545/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1545/')">3:45 pm</a></li>
+				    <li id = "1600/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1600/')">4:00 pm</a></li>
+				    <li id = "1615/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1615/')">4:15 pm</a></li>
+				    <li id = "1630/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1630/')">4:30 pm</a></li>
+				    <li id = "1645/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1645/')">4:45 pm</a></li>
+				    <li id = "1700/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1700/')">5:00 pm</a></li>
+				    <li id = "1715/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1715/')">5:15 pm</a></li>
+				    <li id = "1730/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1730/')">5:30 pm</a></li>
+				    <li id = "1745/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1745/')">5:45 pm</a></li>
+				    <li id = "1800/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1800/')">6:00 pm</a></li>
+				    <li id = "1815/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1815/')">6:15 pm</a></li>
+				    <li id = "1830/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1830/')">6:30 pm</a></li>
+				    <li id = "1845/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1845/')">6:45 pm</a></li>
+				    <li id = "1900/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1900/')">7:00 pm</a></li>
+				    <li id = "1915/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1915/')">7:15 pm</a></li>
+				    <li id = "1930/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1930/')">7:30 pm</a></li>
+				    <li id = "1945/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('1945/')">7:45 pm</a></li>
+				    <li id = "2000/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2000/')">8:00 pm</a></li>
+				    <li id = "2015/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2015/')">8:15 pm</a></li>
+				    <li id = "2030/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2030/')">8:30 pm</a></li>
+				    <li id = "2045/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2045/')">8:45 pm</a></li>
+				    <li id = "2100/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2100/')">9:00 pm</a></li>
+				    <li id = "2115/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2115/')">9:15 pm</a></li>
+				    <li id = "2130/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2130/')">9:30 pm</a></li>
+				    <li id = "2145/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2145/')">9:45 pm</a></li>
+				    <li id = "2200/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2200/')">10:00 pm</a></li>
+				    <li id = "2215/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2215/')">10:15 pm</a></li>
+				    <li id = "2230/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2230/')">10:30 pm</a></li>
+				    <li id = "2245/" role="presentation"><a role="menuitem" tabindex="-1" onclick="record2('2245/')">10:45 pm</a></li>
+				    <script>
+					  	
+					</script>
+				  </ul>
+				</div>
+			 </div>
+		 </div>
+
+		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+		 <div class="row"><div class="col-xs-12"><label id="alert" height="500px" color="red"></label></div></div>
+		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
+		
+		 <button id="btn1" type="button" class="btn btn-success btn-sm active" onclick="redirect()">Search</button>
+		 <script>
+		 	var x, y;
+		 	var ok = true;
+			function record(myID) {
+			    x = document.getElementById(myID).id;
+			    console.log(x);
+			    document.getElementById("btnL").innerHTML = document.getElementById(myID).innerHTML;
+			}
+
+			function record2(myID) {
+			    var rudY = document.getElementById(myID).id;
+			    y = rudY.substring(0, 4);
+			    console.log(y);
+			    document.getElementById("btnR").innerHTML = document.getElementById(y).innerHTML;
+			}
+
+			 $(document).ready(function() {	 	
+			 	$("#btn1").on('click', function(){
+			 		var a = parseInt(x);
+			 		var b = parseInt(y);
+			 		if (a >= b) {
+			 			$("#alert").text("Start time must be before end time!");
+			 			ok = true;
+			 		}
+			 	});
+
+		 	 });
+
+		 	function redirect() {
+		 	  var a = parseInt(x);
+	 		  var b = parseInt(y);
+	 		  if (a >= b) {
+	 			getElementById("alert").innerHTML = "Start time must be before end time!";
+	 			ok = false;
+	 		  }
+		 	  if(ok) {
+		 	  	window.location.replace("../bower_components/confirmation.html");
+		 	  }
+			}
+		
+		 </script>
+		 <button id="btn2" type="button" class="btn btn-default btn-sm active" onclick = "redirect()">Cancel</button>
+		
+	</div>
+	  <div class="col-md-6">.col-md-6
+	  </div>
+	</div>
+
+
+</div>
+
+
+
+</body>
+</html>
