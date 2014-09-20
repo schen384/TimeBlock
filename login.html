@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/JavaScript" src="../bower_components/jquery/dist/jquery.js"></script>
+
+<script type="text/JavaScript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">TimeBlock</h3>
+     </div>
+
+    <form role="form">
+	  <div class="form-group">
+	    <label for="exampleInputUserName">User Name</label>
+	    <input id="input1" type="text" class="form-control" id="exampleInputUserName" placeholder="User name" maxlength="50">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword">Password</label>
+	    <input id="input1" type="password" class="form-control" id="exampleInputPassword" placeholder="Password" maxlength="50">
+	  </div>
+	  
+	  <button id="btn1" type="button" class="btn btn-primary btn-lg active">Login</button>
+	  <button id="btn2" type="button" class="btn btn-default btn-lg active">Register</button>
+
+	</form>
+
+	
+	<script>
+	$(document).ready(function(){
+	   $("#btn1").on('click', function(){
+	     var userName = $("#input1").val();
+	     var passWord = $("#input2").val();
+	     console.log(userName);
+	     console.log(passWord);
+	   });
+
+	   $("#btn2").on('click', function(){
+	     $(document).load("../bower_components/registration.html");
+	   });
+
+	})
+	</script>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

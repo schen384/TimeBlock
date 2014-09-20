@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">Registration</h3>
+     </div>
+
+    <p>
+    <div class="input-group input-group-lg">
+	  <span class="input-group-addon">User Name</span>
+	  <input id="input1" type="text" class="form-control" placeholder="Username">
+	</div></p>
+
+	<p></p>
+	<div class="input-group input-group-lg">
+	  <span class="input-group-addon">Password</span>
+	  <input id="input2" type="password" class="form-control" placeholder="Password">
+	</div>
+
+	<p></p>
+	<button id="btn1" type="button" class="btn btn-primary btn-lg active">Login</button>
+	<button id="btn2" type="button" class="btn btn-default btn-lg active">Register</button>
+
+	<script type="text/JavaScript" src="../bower_components/jquery/dist/jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+	   $("#btn1").on('click', function(){
+	     var userName = $("#input1").val();
+	     var password = $("#input2").val();
+	   });
+
+	   $("#btn2").on('click', function(){
+	     $(document).load("../bower_components/registration.html");
+	   });
+
+	})
+	</script>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
