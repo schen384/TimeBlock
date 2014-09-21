@@ -24,7 +24,7 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <h3 class="text-muted">TimeBlock</h3>
+      <h3 class="text-muted">SAC Field Reservation</h3>
   	</div>
 
   	<div class="row">
@@ -171,71 +171,155 @@
 			 </div>
 		 </div>
 
+		 <div style="width:500px;height:150px;"></div>
+		 <div class="row"><div class="col-xs-12"><label id="alert" style="color:red"></label></div></div>
 		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
 		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
-		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
-		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
-		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
-		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
-		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
-		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
-		 <div class="row"><div class="col-xs-12"><label id="alert" height="500px" color="red"></label></div></div>
-		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
-		 <div class="row"><div class="col-xs-12"><label height="500px"></label></div></div>
-		
 		 <button id="btn1" type="button" class="btn btn-success btn-sm active" onclick="redirect()">Search</button>
-		 <script>
-		 	var x, y;
-		 	var ok = true;
-			function record(myID) {
-			    x = document.getElementById(myID).id;
-			    console.log(x);
-			    document.getElementById("btnL").innerHTML = document.getElementById(myID).innerHTML;
-			}
-
-			function record2(myID) {
-			    var rudY = document.getElementById(myID).id;
-			    y = rudY.substring(0, 4);
-			    console.log(y);
-			    document.getElementById("btnR").innerHTML = document.getElementById(y).innerHTML;
-			}
-
-			 $(document).ready(function() {	 	
-			 	$("#btn1").on('click', function(){
-			 		var a = parseInt(x);
-			 		var b = parseInt(y);
-			 		if (a >= b) {
-			 			$("#alert").text("Start time must be before end time!");
-			 			ok = true;
-			 		}
-			 	});
-
-		 	 });
-
-		 	function redirect() {
-		 	  var a = parseInt(x);
-	 		  var b = parseInt(y);
-	 		  if (a >= b) {
-	 			getElementById("alert").innerHTML = "Start time must be before end time!";
-	 			ok = false;
-	 		  }
-		 	  if(ok) {
-		 	  	window.location.replace("../bower_components/confirmation.html");
-		 	  }
-			}
-		
-		 </script>
 		 <button id="btn2" type="button" class="btn btn-default btn-sm active" onclick = "redirect()">Cancel</button>
 		
 	</div>
-	  <div class="col-md-6">.col-md-6
+	  <div class="col-md-2"></div>
+	  <div class="col-md-3">
+	  	<div class="row">
+		  	<div id="0" class="col-xs-6" style="background-color: #006600; height:27px; border: 1px solid #000"></div>
+		  	<div id="0" class="col-xs-6" style="background-color: #006600; height:27px; border: 1px solid #000"></div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="1" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('1')">
+		  		<tr style="horizontal-align: center">1</tr>
+		  	</div>
+		  	<div id="2" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('2')">
+		  		<tr style="horizontal-align: center">2</tr>
+		  	</div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="3" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('3')">
+		  		<tr style="horizontal-align: center">3</tr>
+		  	</div>
+		  	<div id="4" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('4')">
+		  		<tr style="horizontal-align: center">4</tr>
+		  	</div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="5" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('5')">
+		  		<tr style="horizontal-align: center">5</tr>
+		  	</div>
+		  	<div id="6" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('6')">
+		  		<tr style="horizontal-align: center">6</tr>
+		  	</div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="7" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('7')">
+		  		<tr style="horizontal-align: center">7</tr>
+		  	</div>
+		  	<div id="8" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('8')">
+		  		<tr style="horizontal-align: center">8</tr>
+		  	</div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="0" class="col-xs-6" style="background-color: #006600; height:27px; border: 1px solid #000"></div>
+		  	<div id="0" class="col-xs-6" style="background-color: #006600; height:27px; border: 1px solid #000"></div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="0" class="col-xs-6" style="height:8px;"></div>
+		  	<div id="0" class="col-xs-6" style="height:8px;"></div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="0" class="col-xs-6" style="background-color: #006600; height:27px; border: 1px solid #000"></div>
+		  	<div id="0" class="col-xs-6" style="background-color: #006600; height:27px; border: 1px solid #000"></div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="9" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('9')">
+		  		<tr style="horizontal-align: center">9</tr>
+		  	</div>
+		  	<div id="10" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('10')">
+		  		<tr style="horizontal-align: center">10</tr>
+		  	</div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="11" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('11')">
+		  		<tr style="horizontal-align: center">11</tr>
+		  	</div>
+		  	<div id="12" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('12')">
+		  		<tr style="horizontal-align: center">12</tr>
+		  	</div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="13" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('13')">
+		  		<tr style="horizontal-align: center">13</tr>
+		  	</div>
+		  	<div id="14" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('14')">
+		  		<tr style="horizontal-align: center">14</tr>
+		  	</div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="15" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('15')">
+		  		<tr style="horizontal-align: center">15</tr>
+		  	</div>
+		  	<div id="16" class="col-xs-6" style="background-color: #00FF33; height:57px; border: 1px solid #000" onclick="record3('16')">
+		  		<tr style="horizontal-align: center">16</tr>
+		  	</div>
+	  	</div>
+	  	<div class="row">
+		  	<div id="0" class="col-xs-6" style="background-color: #006600; height:27px; border: 1px solid #000"></div>
+		  	<div id="0" class="col-xs-6" style="background-color: #006600; height:27px; border: 1px solid #000"></div>
+	  	</div>
+
 	  </div>
+	  <div class="col-md-2"></div>
 	</div>
 
 
 </div>
 
+<script>
+ 	var x, y, z, date, month, year;
+ 	var ok = true, clicked = false;
+ 	var oldz;
+	function record(myID) {
+	    x = document.getElementById(myID).id;
+	    console.log(x);
+	    document.getElementById("btnL").innerHTML = document.getElementById(myID).innerHTML;
+	}
 
+	function record2(myID) {
+	    var rudY = document.getElementById(myID).id;
+	    y = rudY.substring(0, 4);
+	    console.log(y);
+	    document.getElementById("btnR").innerHTML = document.getElementById(y).innerHTML;
+	}
+
+	function record3(fieldNum) {
+		z = document.getElementById(fieldNum).id;
+		if (clicked) {
+			document.getElementById(oldz).style.backgroundColor = "#00FF33";
+		}
+		document.getElementById(fieldNum).style.backgroundColor = "lightblue";
+		oldz = z;
+		clicked = true;
+	}
+
+ 	function redirect() {
+ 	  ok = true;
+ 	  if (x ==null || y==null || z == null) {
+ 	  	document.getElementById("alert").innerHTML = "Must select start time, end time, and one field to continue";
+ 	  	ok = false;
+ 	  } else {
+ 	  	var a = parseInt(x);
+		var b = parseInt(y);
+		if (a >= b) {
+		   document.getElementById("alert").innerHTML = "Start time must be before end time!";
+		   ok = false;
+		 }
+ 	  }
+ 	  
+ 	  if(ok) {
+ 	  	window.location.replace("../bower_components/confirmation.html");
+ 	  }
+	}
+
+ </script>
 
 </body>
 </html>
