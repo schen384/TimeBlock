@@ -64,6 +64,27 @@
 	  	 window.location.replace("../bower_components/mainPage.html");
 	  }
 	}
+
+	function BindJson() {
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:8888/createaccount",
+            data: JSON.stringify({ UserAccount:{ username: "zhuzixiangshabi", password:"zhuzixiangshabi2", gtid: "902988000"}}),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data1) {
+                alert(data1.d);
+            },
+            error: function (request, status, errorThrown) {
+                alert(status);
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        BindJson();    
+    });
+
 	</script>
 
 

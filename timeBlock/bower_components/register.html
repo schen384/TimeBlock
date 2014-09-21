@@ -48,6 +48,22 @@
 		});
 
 	});
+
+	function BindJson() {
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:8888/createaccount",
+            data: JSON.stringify({ UserAccount:{ username: "zhuzixiangshabi", password:"zhuzixiangshabi2", gtid: "902988000"}}),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data1) {
+                alert(data1.d);
+            },
+            error: function (request, status, errorThrown) {
+                alert(status);
+            }
+        });
+    }
 	</script> 
 
 	<!-- Latest compiled and minified JavaScript -->
