@@ -52,8 +52,8 @@
 	function BindJson() {
         $.ajax({
             type: "POST",
-            url: "http://localhost:8888/createaccount",
-            data: JSON.stringify({ UserAccount:{ username: "zhuzixiangshabi", password:"zhuzixiangshabi2", gtid: "902988000"}}),
+            url: "gttimeblock.appspot.com/createaccount",
+            data: {userName: "username"},
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (data1) {
