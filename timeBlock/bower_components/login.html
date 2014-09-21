@@ -32,20 +32,21 @@
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleInputPassword">Password</label>
-	    <input id="input1" type="password" class="form-control" id="exampleInputPassword" placeholder="Password" maxlength="50">
+	    <input id="input2" type="password" class="form-control" id="exampleInputPassword" placeholder="Password" maxlength="50">
 	  </div>
 	  
-	  <button id="btn1" type="button" class="btn btn-primary btn-lg active">Login</button>
+	  <button id="btn1" type="button" class="btn btn-primary btn-lg active" onclick = "redirect1()">Login</button>
 	  <button id="btn2" type="button" class="btn btn-default btn-lg active" onclick = "redirect()">Register</button>
 
 	</form>
 
 	
 	<script>
+	var userName, passWord;
 	$(document).ready(function(){
 	   $("#btn1").on('click', function(){
-	     var userName = $("#input1").val();
-	     var passWord = $("#input2").val();
+	     userName = $("#input1").val();
+	     passWord = $("#input2").val();
 	     console.log(userName);
 	     console.log(passWord);
 	   });
@@ -54,6 +55,14 @@
 
 	function redirect() {
 	  window.location.replace("../bower_components/register.html");
+	}
+
+	function redirect1() {
+	  if (userName==null || passWord == null) {
+	  	alert("Incomplete information");
+	  } else {
+	  	 window.location.replace("../bower_components/mainPage.html");
+	  }
 	}
 	</script>
 
